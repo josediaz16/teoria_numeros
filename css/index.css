@@ -1,0 +1,34 @@
+body #wrapper .history-view .container-fluid .math-people img {
+  width: 150px;
+  height: 200px;
+}
+
+body #wrapper .history-view .container-fluid .prime-numbers {
+  margin-bottom: 20px;
+}
+
+body #wrapper .history-view .container-fluid .prime-numbers .no-data img {
+  width: 90%;
+}
+
+body #wrapper .history-view .container-fluid .prime-numbers .no-work {
+  padding-top: 10%;
+}
+
+body #wrapper .history-view .container-fluid .prime-numbers .result {
+  padding: 5% 0%;
+}
+
+body #wrapper .history-view .container-fluid .prime-numbers .number {
+  -webkit-border-radius: 99px;
+  -moz-border-radius: 99px;
+  -webkit-box-shadow: #B3B3B3 9px 9px 9px;
+  -moz-box-shadow: #B3B3B3 9px 9px 9px;
+  width: 65px;
+  height: 36px;
+  border-radius: 17px;
+  background-color: rgba(227, 191, 11, 0.7);
+  box-shadow: #B3B3B3 9px 9px 9px;
+  padding-top: 8px;
+  margin: 4px;
+}
