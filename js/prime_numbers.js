@@ -12,7 +12,7 @@ var app = new Vue({
     findPrimeNumbers: function() {
       this.error = false;
       if(this.validData()) {
-        this.primeNumbers = primesFunctions.findPrimes(this.minValue, this.maxValue, 6, this.ordered);
+        this.primeNumbers = primesFunctions.findPrimeNumbers(this.minValue, this.maxValue, 6, this.ordered);
       }
       else {
         this.error = true;

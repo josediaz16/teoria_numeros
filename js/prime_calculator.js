@@ -1,6 +1,28 @@
 var primesFunctions = {
 
-  findPrimes: function(min, max, chunks, ordered) {
+  findPrimeNumbers: function(min, max, chunks, ordered) {
+    primesInRange = this.findPrimesInRange(min, max);
+    return this.processResult(primesInRange, chunks, ordered);
+  },
+
+  findPrimeFactors: function(number) {
+    var factors = [], i;
+
+    for (i = 2; i <= number; i++) {
+      factor = [];
+      while ((number % i) === 0) {
+        factor.push(i);
+        number /= i;
+      }
+      if(factor.length > 0) {
+        factors.push([i, factor.length]);
+      }
+    }
+
+    return factors;
+  },
+
+  findPrimesInRange: function(min, max) {
     var primes = [];
     var isNotPrime = [];
     minValue = min === 1 ? min + 1 : min;
@@ -12,7 +34,7 @@ var primesFunctions = {
         }
       }
     }
-    return this.processResult(primes, chunks, ordered);
+    return primes;
   },
 
   processResult: function(primes, chunks, ordered) {
