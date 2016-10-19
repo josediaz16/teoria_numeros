@@ -1,0 +1,21 @@
+body {
+  #wrapper {
+    .history-view {
+      .container-fluid {
+        .math-people {
+          img {
+            width: 10%;
+          }
+        }
+        .prime-numbers {
+          margin-bottom: 20px;
+          .no-data {
+            img {
+              width: 20%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
