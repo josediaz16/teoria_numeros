@@ -3,6 +3,16 @@ body #wrapper .history-view .container-fluid .math-people img {
   height: 200px;
 }
 
+body #wrapper .history-view .container-fluid .authors img {
+  width: 150px;
+  height: 200px;
+}
+
+body #wrapper .history-view .container-fluid .authors .code {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
 body #wrapper .history-view .container-fluid .prime-numbers {
   margin-bottom: 20px;
 }
