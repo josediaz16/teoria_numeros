@@ -1,5 +1,5 @@
 var app = new Vue({
-  el: '#prime_factors',
+  el: '#prime_relatives',
   data: {
     referenceNumber: null,
     primeFactors: [],
@@ -23,12 +23,8 @@ var app = new Vue({
       return this.primesModule.inChunks(6);
     },
 
-    numberOfDivisors: function() {
-      return this.primesModule.taoFunction();
-    },
-
-    totalOfDivisors: function() {
-      return this.primesModule.sigmaFunction();
+    numberOfRelatives: function() {
+      return this.primesModule.phiFunction(this.referenceNumber);
     },
 
     shouldShowResult: function() {

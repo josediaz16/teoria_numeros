@@ -6,13 +6,14 @@ var app = new Vue({
     primeNumbers: [],
     error: false,
     ordered: true,
-    message: ""
+    message: "",
+    primesModule: new PrimesModule()
   },
   methods: {
     findPrimeNumbers: function() {
       this.error = false;
       if(this.validData()) {
-        this.primeNumbers = primesFunctions.findPrimeNumbers(this.minValue, this.maxValue, 6, this.ordered);
+        this.primeNumbers = this.primesModule.findPrimeNumbers(this.minValue, this.maxValue, 6, this.ordered);
       }
       else {
         this.error = true;
@@ -20,8 +21,8 @@ var app = new Vue({
       }
     },
 
-    totalNumbers: function() {
-      return this.primeNumbers.map(function(a){return a.length;}).reduce(function(a, b) { return a + b; }, 0);
+    totalPrimes: function() {
+      return this.primesModule.totalPrimes();
     },
 
     shouldShowResult: function() {
